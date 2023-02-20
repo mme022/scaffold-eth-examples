@@ -43,7 +43,7 @@ error DeadlineNotPassed();
         uint256 _tokenId,
         uint128 _price,
         uint256 _duration
-    ) external onlyOwner {
+    ) external {
         if (msg.sender == address(0)) {
             revert InvalidAddress();
         } else if (_nft == address(0)) {
